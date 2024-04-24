@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class Dart extends StatelessWidget {
   const Dart({super.key});
-
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -19,17 +18,17 @@ class Dart extends StatelessWidget {
           Text(
             'Mohan Lal',
             style: TextStyle(
-              color: Colors.white,
-              fontSize: 30,
+              color: Colors.black,
+              fontSize: 20,
             ),
           ),
           Text(
             'Actor',
             style: TextStyle(
-                color: Colors.white,
-                fontSize: 50,
+                color: Colors.black,
+                fontSize: 30,
                 decoration: TextDecoration.underline,
-                decorationColor: Colors.white),
+                decorationColor: Colors.black),
           ),
           Container(
             height: 50,
@@ -38,28 +37,29 @@ class Dart extends StatelessWidget {
             child: Row(
               children: [
                 SizedBox(width: 10),
-                Icon(Icons.call, size: 50,),
+                Icon(Icons.call, size: 20,),
                 SizedBox(width: 50),
                 Text('+91 9656427159')
               ],
             )
-          ),SizedBox(width: 50,)
+          ),SizedBox(width: 50,),
 
           Container(
-          height: 50,
-          width: 500,
-          color: Colors.green,
-          child: Row(
-            children: [
-              SizedBox(width: 10),
-              Icon(Icons.mail, size: 10,),
-              SizedBox(width: 50),
-              Text('mohanlal@gmail.com'),
-          ],
-    )
-          ),
+              height: 50,
+              width: 500,
+              color: Colors.white,
+              child: Row(
+                children: [
+                  SizedBox(width: 10),
+                  Icon(Icons.mail, size: 20,),
+                  SizedBox(width: 50),
+                  Text('mohanlal@gmail.com')
+                ],
+              )
+          ),SizedBox(width: 50,)
         ],
-      )),
+      ),
+      ),
     );
   }
 }
