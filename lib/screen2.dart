@@ -29,7 +29,7 @@ class Dartt extends StatelessWidget {
                 child: TextField(
                   controller: myController,
                   decoration: InputDecoration(
-                      hintText: 'First Name',
+                      hintText: 'FirstName',
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                         Radius.circular(5),
@@ -76,8 +76,7 @@ class Dartt extends StatelessWidget {
                   print(passController.text);
 
                      Navigator.push(context,MaterialPageRoute(
-                        builder: (context) => Dart(),
-                     ));
+                        builder: (context) => Dart(FirstName: myController.text,Email: emailController.text,Password: passController.text,),));
                 },
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                 child: Text(
